@@ -7,15 +7,22 @@ import sklearn
 import joblib
 
 # Load pickled objects
-with open("df.pkl", "rb") as f:
-    df = pickle.load(f)
+try:
+    with open("df.pkl", "rb") as f:
+        df = pickle.load(f)
+except Exception as e:
+    st.error(f"❌ Error loading model: {e}")
+    st.stop()
 # df = joblib.load("df.joblib")
 
 # Load the pickled pipeline (model)
-with open("fitness_model.pkl", "rb") as fm:
-    model = pickle.load(fm)
+try:
+    with open("fitness_model.pkl", "rb") as fm:
+        model = pickle.load(fm)
+except Exception as e:
+    st.error(f"❌ Error loading model: {e}")
+    st.stop()
 # model = joblib.load("fitness_model.joblib")
-
 
 # Page Config
 st.set_page_config(page_title="Fitness Prediction App", layout="wide")

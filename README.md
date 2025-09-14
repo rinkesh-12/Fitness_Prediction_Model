@@ -44,6 +44,3 @@ A **Streamlit web application** that provides:
 └── README.md # Project Documentation
 
 ---
-
-## 📂 Project Structure
-

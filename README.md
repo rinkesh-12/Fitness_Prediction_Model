@@ -32,10 +32,15 @@ A **Streamlit web application** that provides:
 
 ## Project Structure
 ├── app.py # Main Streamlit app
+
 ├── fitness.ipynb # Jupyter Notebook (EDA & Model Training)
+
 ├── df.pkl # Dataset (serialized)
+
 ├── fitness_model.pkl # Trained ML model
+
 ├── requirements.txt # Dependencies
+
 └── README.md # Project Documentation
 
 ---
